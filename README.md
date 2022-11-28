@@ -18,3 +18,5 @@ Rest API was used
 6)To get all infected survivors, its a get request no body http://localhost:8080/survivors/allinfected
 
 6)To get all uninfected survivors, its a get request no body http://localhost:8080/survivors/allnotinfected
+
+7)To get all robots, its a get request no request body, http://localhost:8080/survivors/getrobots
