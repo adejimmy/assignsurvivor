@@ -127,13 +127,13 @@ public class SurvivorController {
 
 
     @GetMapping("/getrobots")
-    public String request(String endpoint) throws Exception  {
+    public String request() throws Exception  {
 
         //if we are reading the json it means it reads one after the other
         //to make all of them to be as one string we use string builder
         StringBuilder sb = new StringBuilder();
 
-        URL url = new URL(endpoint);
+        URL url = new URL("https://robotstakeover20210903110417.azurewebsites.net/robotcpu");
 
         // open a connection to this URL
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
