@@ -1,41 +1,23 @@
 package com.example.userdetails.servicesImple;
 
-import com.example.userdetails.controllers.InitResult;
-import com.example.userdetails.controllers.SurvivorNotFoundException;
-import com.example.userdetails.domains.Resources;
 import com.example.userdetails.domains.SurvivorStatus;
 import com.example.userdetails.domains.Survivors;
 import com.example.userdetails.dto.ResourcesDto;
 import com.example.userdetails.dto.SurvivorsDto;
 import com.example.userdetails.exceptions.ErrorMessages;
 import com.example.userdetails.exceptions.SurvivorServiceException;
-import com.example.userdetails.helper.PersonGenerator;
 import com.example.userdetails.helper.Util;
 import com.example.userdetails.repositories.SurvivorRepository;
-import com.example.userdetails.services.SurvivorService;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.userdetails.domains.services.SurvivorService;
 
-import org.apache.logging.log4j.util.Strings;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import com.github.dozermapper.core.Mapper;
 
-import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.contains;
 
 @Service
 public class SurvivorServiceImpl implements SurvivorService {

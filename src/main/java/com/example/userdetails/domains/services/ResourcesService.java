@@ -1,4 +1,4 @@
-package com.example.userdetails.services;
+package com.example.userdetails.domains.services;
 
 import com.example.userdetails.dto.ResourcesDto;
 

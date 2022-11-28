@@ -1,12 +1,10 @@
 package com.example.userdetails.controllers;
 
 import com.example.userdetails.domains.RequestModel.SurvivorRequestModel;
-import com.example.userdetails.domains.Resources;
 import com.example.userdetails.domains.ResponseModel.SurvivorResponseModel;
-import com.example.userdetails.domains.Survivors;
 import com.example.userdetails.dto.SurvivorsDto;
-import com.example.userdetails.services.ResourcesService;
-import com.example.userdetails.services.SurvivorService;
+import com.example.userdetails.domains.services.ResourcesService;
+import com.example.userdetails.domains.services.SurvivorService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

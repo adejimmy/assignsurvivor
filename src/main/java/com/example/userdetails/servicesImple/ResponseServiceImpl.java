@@ -5,7 +5,7 @@ import com.example.userdetails.domains.Survivors;
 import com.example.userdetails.dto.ResourcesDto;
 import com.example.userdetails.repositories.ResourcesRepository;
 import com.example.userdetails.repositories.SurvivorRepository;
-import com.example.userdetails.services.ResourcesService;
+import com.example.userdetails.domains.services.ResourcesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.modelmapper.ModelMapper;
